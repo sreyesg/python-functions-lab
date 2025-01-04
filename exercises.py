@@ -13,6 +13,7 @@ def calculate_area_triangle(base, height):
 
 
 # print('Exercise 1:', calculate_area_triangle(10, 5))
+
 # Exercise 2: Calculate Simple Interest
 #
 # Write a function named `simple_interest` that takes principal, rate of interest (as a percentage), and time (years).
@@ -24,9 +25,10 @@ def calculate_area_triangle(base, height):
 #
 # Define your function and call it to see the result.
 
+def simple_interest(principal, rate, time):
+    return principal * rate * time /100
 
-
-print('Exercise 2:', simple_interest(1000, 5, 2))
+print('Exercise 2:', simple_interest(1500, 3.5, 5))
 
 # Exercise 3: Apply a Discount
 #
