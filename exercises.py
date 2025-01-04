@@ -66,8 +66,8 @@ def convert_temperature(temperature, unit):
     if unit == "F":
         return (temperature - 32) * 5/9
 
-print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
-print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
+# print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
+# print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 
 # Exercise 5: Sum to N
 #
@@ -79,9 +79,15 @@ print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 #
 # Define the function and then call it below.
 
-
-
-print('Exercise 5:', sum_to(6))
+    # create a empty variable to store the result
+    # create a range from 1 to n number
+    # loop over list, and add each index to 
+def sum_to(n):
+    result = 0
+    for num in range(1,n+1):
+        result += num
+    return result
+print('Exercise 5:', sum_to(10))
 
 
 # Exercise 6: Find the Largest Number
