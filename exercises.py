@@ -99,10 +99,16 @@ print('Exercise 5:', sum_to(10))
 # largest(10, 4, 2) should return 10.
 #
 # Define your function and test it with different inputs.
+def largest(num1, num2, num3):
+    result = num1
+    if num2 > result:
+        result = num2
+    if num3 > result:
+        result = num3
+    return result
 
 
-
-print('Exercise 6:', largest(1, 2, 3))
+print('Exercise 6:', largest(10, 4, 2))
 
 
 # Exercise 7: Calculate a Tip
