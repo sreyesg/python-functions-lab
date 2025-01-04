@@ -28,7 +28,7 @@ def calculate_area_triangle(base, height):
 def simple_interest(principal, rate, time):
     return principal * rate * time /100
 
-print('Exercise 2:', simple_interest(1500, 3.5, 5))
+# print('Exercise 2:', simple_interest(1500, 3.5, 5))
 
 # Exercise 3: Apply a Discount
 #
@@ -44,7 +44,7 @@ def apply_discount(price, discount):
     return price - discount
 
 
-print('Exercise 3:', apply_discount(100, 25))
+#print('Exercise 3:', apply_discount(100, 25))
 
 # Exercise 4: Convert Temperature
 #
@@ -60,7 +60,11 @@ print('Exercise 3:', apply_discount(100, 25))
 #
 # Define the function and then call it below.
 
-
+def convert_temperature(temperature, unit):
+    if unit == "C":
+        return (temperature * 9/5) + 32
+    if unit == "F":
+        return (temperature - 32) * 5/9
 
 print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
 print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
